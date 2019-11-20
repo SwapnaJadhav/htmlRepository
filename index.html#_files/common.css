@@ -1,0 +1,178 @@
+.wrapper-progressBar {
+    width: 100%
+}
+
+/* .progressBar {
+} */
+
+.progressBar li {
+    list-style-type: none;
+    float: left;
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+
+.progressBar li:before {
+    content: " ";
+    line-height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px;
+    background-color: white
+}
+
+.progressBar li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressBar li:first-child:after {
+    content: none;
+}
+
+.progressBar li.active {
+    color: dodgerblue;
+}
+
+.progressBar li.active:before {
+    border-color: dodgerblue;
+    background-color: dodgerblue
+}
+
+.progressBar li.active + li:after {
+    background-color: dodgerblue;
+}
+
+
+
+#abc {
+    color: 'red';
+  }
+#inputEmail4 {
+    display: block;
+    
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.img-thumbnail
+{ 
+    width: 85;
+    height: 65;
+} 
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+/* <-- Company logo--> */
+#customFile .custom-file-control:lang(en)::after {
+    content: "Select file...";
+  }
+  
+  #customFile .custom-file-control:lang(en)::before {
+    content: "Click me";
+  }
+  
+  /*when a value is selected, this class removes the content */
+  .custom-file-control.selected:lang(en)::after {
+    content: "" !important;
+  }
+  
+  .custom-file {
+    overflow: hidden;
+  }
+  .custom-file-control {
+    white-space: nowrap;
+  }
+ 
+  .center {
+    display :table;
+    text-align: center;
+    margin:auto;
+    /* text-align: center;
+
+    margin: auto;
+    width: 100%;
+    border: 5px solid #73AD21; 
+    padding: 20px; */
+  }
+  .bodyline{
+    padding: 70px 90px;
+  }
+  .menu-text a{
+    color:#212529;
+  }
+  .container-fluid{
+    padding-right: 66px;
+    padding-left: 66px;
+  }
+  .form-sungroup {
+    padding-left: 70px;
+}
+
+  /* .container{
+    margin: ;
+  } */
+ /* Grid */
+ /* form{
+   overflow: hidden;
+
+ }
+ label{
+   float: left;
+   width: 60px;
+   padding-right: 24px;
+ }
+ input{
+   float: left;
+   width: calc(60% - 100px);
+
+ }
+.btn btn-primary{
+   float: right;
+   width: calc(60% - 100px);
+ } */
+
+
+/* .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+} */
+/* @media screen and (max-width: 600px) {
+    .img-thumbnail{
+        width: 72px;
+        height: 66px;  
+    }
+  }  */

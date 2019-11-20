@@ -1,0 +1,268 @@
+<html>
+    <head>
+            <script type="text/javascript" src="js\bootstrap.js"></script>
+
+            <script type="text/javascript" src="js\popper.min.js"></script>
+
+            <script type="text/javascript" src="js\jquery-3.3.1.slim.min.js"></script>
+            <script type="text/javascript" src="./common.js"></script>
+            <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="./common.css">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+            
+    </head>
+
+         <body> 
+          <div class="container-fluid body-color">
+            
+            
+                            <!-- <div class="container">
+                                <!-- Content here -->
+                                <div class="center">
+                                <ul class="nav nav-pills menu-text">
+                                
+
+                                    <img src="Sundeus-logo black.png" alt="..." class="img-thumbnail">
+                                         <!-- <li class="nav-item">
+                                                <img src="Penguins.jpg" class="img-fluid" alt="Responsive image">
+                                        </li>  -->
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#">HOME</a>
+                                        </li>
+            
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#">CONTRACT MANAGMENT</a>
+                                         </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">SUNDEUS OFERING</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">COMPANIES</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#">CARRERS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" href="#">CONTACT US</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              
+                            
+                      
+                      <nav class="navbar navbar-light bg-light" align="center">
+                      <p class="h2">Register</p>
+                      
+                    </nav>
+                  <br>
+                   <div class="row">
+                       
+                          <div class="wrapper-progressBar">
+                            <ul class="progressBar">
+                              <li class="active"><b>Plan Selection</b></li>
+                              <li class="active"><b>Organisation Information</b></li>
+                              <li><b>Verification</b></li>
+                            </ul>
+                          </div>
+                        </div>
+                      <br>
+                      <p class="h6"><b>**Fields marked with (*) are required</b></p>
+                      <br>
+                     
+                     
+                  <!-- Form Starting -->
+                  <!-- <form class="needs-validation" novalidate> -->
+                      <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4"><b>Organisation ID</b></label>
+                                <input type="email" class="form-control is-valid" id="inputEmail4" placeholder="">
+                                <!-- <div class="invalid-feedback">
+                                  Looks good!
+                                </div> -->
+                              </div>
+                        </div>
+                          <div class="row">
+                          <div class="form-group col-md-6">
+                              <label for="inputPassword4"><b>Organisation Name *</b></label> 
+                              <input type="password" class="form-control is-invalid" id="inputPassword4" placeholder="Add Your Company Name" required>
+                              <div class="invalid-feedback">
+                               Please provide Organisation Name!
+                              </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputAddress"><b>Registration Number *</b></label>
+                              <input type="text" class="form-control is-invalid" id="inputAddress" placeholder="Add Your Company Registration Number" required>
+                              <div class="invalid-feedback">
+                               Please provide Registration Number!
+                              </div>
+                            </div>
+                        </div>
+                     <div class="row">
+                          <div class="form-group col-md-6">
+                              <label for="inputPassword4"><b>Address Line 1 *</b></label>
+                              <input type="password" class="form-control is-invalid" id="inputPassword4" placeholder="Add Your Company Address Line1" required>
+                              <div class="invalid-feedback">
+                                Please provide valid Address!
+                              </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4"><b>Address Line 2</b></label>
+                              <input type="password" class="form-control is-invalid" id="inputPassword4" placeholder="Add Your Company Address Line2 ">
+                              <!-- <div class="invalid-feedback">
+                                Please provide Registered Address!
+                              </div> -->
+                            </div>
+                              <div class="form-group col-md-3">
+                                  <label for="validationCustom05"><b>Zip Code *</b></label>
+                                  <input type="text" class="form-control is-invalid" id="validationCustom05" placeholder="Zip Code" required>
+                                  <div class="invalid-feedback">
+                                    Please provide a valid zip code.
+                                  </div>
+                              </div>
+                            <div class="form-group col-md-3">
+                              <label for="inputState"><b>Country *</b></label>
+                              <select id="inputState" class="form-control is-invalid">
+                                <option selected>Choose...</option>
+                                <option>India</option>
+                                <option>Bangladesh</option>
+                                <option>Cuba</option>
+                                <option>Russia</option>
+                                <option>Singapore</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                  Please select Country Name.
+                                </div>
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label for="inputState"><b>Number Of Employees *</b></label>
+                            <select id="inputState" class="form-control is-invalid">
+                              <option selected>Choose...</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select Employees.
+                              </div>
+                        </div>
+                           <div class="form-group col-md-3">
+                                <label for="inputState"><b>Number Of Licenses Required *</b></label>
+                                <select id="inputState" class="form-control is-invalid">
+                                  <option selected>Choose...</option>
+                                  <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select Number.
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4"><b>Website</b></label>
+                            <input type="email" class="form-control is-invalid" id="inputEmail4" placeholder="Add Your Company Mail Id" required>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4"><b>Company Logo</b></label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                              </div> 
+                            </div> 
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                              <label for="inputPassword4"><b>Official Email Address *</b></label>
+                              <input type="password" class="form-control is-invalid" id="inputPassword4" placeholder="Add your Company Email Address" required>
+                              <div class="invalid-feedback">
+                                Please provide valid Email address.
+                              </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputAddress"><b>Contact Number *</b></label>
+                              <input type="text" class="form-control is-invalid" id="inputAddress" placeholder="Add Your Contact Number" required>
+                              <div class="invalid-feedback">
+                                Please provide valid Contact Number.
+                              </div>
+                            </div>
+                        </div>
+                        
+
+                          <!-- <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                              <label for="validationCustom03">City</label>
+                              <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                              <div class="invalid-feedback">
+                                Please provide a valid city.
+                              </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="validationCustom04">State</label>
+                              <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                              <div class="invalid-feedback">
+                                Please provide a valid state.
+                              </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="validationCustom05">Zip Code</label>
+                              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip Code" required>
+                              <div class="invalid-feedback">
+                                Please provide a valid zip.
+                              </div>
+                            </div>
+                          </div> -->
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                             I have read and agree to all the terms and conditions below(check all boxes)
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-sungroup">
+                            <div class="form-group">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                                  <label class="form-check-label" for="gridCheck">
+                                      I have read and agree to the <a href="#"> Entrprise Agreement.</a>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        I have read and agree to the <a href="#">Sundeus Online Service Agreement.</a>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                                      <label class="form-check-label" for="gridCheck">
+                                          I have read and agree to the <a href="#">Developer Program terms & Condition.</a>
+                                      </label>
+                                    </div>
+                                  </div>
+                        </div>
+                        
+                              <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        I would like to recieve the Red Hat OpenShift newsletter.
+                                    </label>
+                                  </div>
+                                </div>
+                        <button type="submit" class="btn btn-primary">Submit for Verification</button> 
+                        <a href="#" class="stretched-link"> &lt;&lt;Back to Login</a>
+                      </form>
+                    </div>
+                    
+
+            </body>
+</html>
