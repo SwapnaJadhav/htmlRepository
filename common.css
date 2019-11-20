@@ -63,6 +63,7 @@
     color: 'red';
   }
 
+  
 /* #inputEmail4 {
     display: block;
     height: calc(1em + 0.75rem + 1px);
@@ -162,6 +163,9 @@ form.needs-validation {
 input#inputEmail4 {
 
   border: 1px solid #212529;
+}
+.required {
+  color: red;
 }
 /* .required {
   color: red;
