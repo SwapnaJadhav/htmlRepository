@@ -2,8 +2,6 @@
     width: 100%
 }
 
-/* .progressBar {
-} */
 
 .progressBar li {
     list-style-type: none;
@@ -41,7 +39,8 @@
     content: none;
 }
 .progressBar li.active {
-  color: #dc3545;
+  color: #333333;
+  font-size: 14;
 }
 /* .progressBar li.active {
     color: dodgerblue;
@@ -49,12 +48,12 @@
 
 .progressBar li.active:before {
   border-color: #9E9E9E;
-  background-color: #FF5722;
+  background-color:#FE7815;
 }
 
 
 .progressBar li.active + li:after {
-    background-color: dodgerblue;
+    background-color: #FE7815
 }
 
 
@@ -167,57 +166,40 @@ input#inputEmail4 {
 .required {
   color: red;
 }
-/* .required {
-  color: red;
+.img-thumbnail {
+  padding: 0px;
+  border: 0px;
+}
+.img-thumbnail {
+  width: 310px;
+  height: 45px;
+}
+.nav-link {
+  font-size: 22px;
+  color: #333333;
+}
+.h2 {
+  font-size: 26px;
+  color: #333333;
+  
+}
+.active{
+  color: #FE7815;
+}
+.progressbar li {
+  font-size: 14;
+}
+.navbar navbar-light bg-light{
+  background-color: #eff3f7;
+}
+button.btn.btn-primary {
+  font-size: 13;
+  padding: 12px;
+}
+a.stretched-link {
+  font-size: 13px;
+  color:#1458A8
+}
+/* .form-control{
+  border-block-color: black;
 } */
-/* .body-color label{
- 
-    color: var(--red);
-} */
-
-
-  /* .container{
-    margin: ;
-  } */
- /* Grid */
- /* form{
-   overflow: hidden;
-
- }
- label{
-   float: left;
-   width: 60px;
-   padding-right: 24px;
- }
- input{
-   float: left;
-   width: calc(60% - 100px);
-
- }
-.btn btn-primary{
-   float: right;
-   width: calc(60% - 100px);
- } */
-
-
-/* .btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-} */
-/* @media screen and (max-width: 600px) {
-    .img-thumbnail{
-        width: 72px;
-        height: 66px;  
-    }
-  }  */
