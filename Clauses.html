@@ -1,9 +1,617 @@
 <html>
     <head>
 
+      
+      <!--  <script type="text/javascript" src="js\jquery-3.3.1.slim.min.js"></script>
+        <script type="text/javascript" src="js\bootstrap.js"></script>
+
+        <script type="text/javascript" src="js\popper.min.js"></script>
+
+        
+        <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+        
+<link rel="stylesheet" type="text/css" href="./clausesidebar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+       
     </head>
-        <body>
-            
+        <body class="whole">
+          <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                    <!-- <span id="collapse-text" class="menu-collapsed">Collapse</span> -->
+                </div>
+            </a>
+            <div>
+                <!-- <img src="C:\Users\Chaitalee\Desktop\hTML_github\htmlRepository\Sundeus logo (2).svg" alt="..." class="img-thumbnail"> -->
+                <img src="C:\Users\Chaitalee\Desktop\hTML_github\htmlRepository\Sundeus logo (2).svg" width="80" height="30" class="img-thumbnail">
+
+              </div>
+            <!-- <a class="navbar-brand" href="#">
+                <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                <span class="menu-collapsed">Brand</span>
+            </a> -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#top"><i class="fa fa-search-plus" aria-hidden="true"></i> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top"><i class="fa fa-bell" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    </li>
+                    <!-- This menu is hidden in bigger devices with d-sm-none. 
+                   The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep all the useful sidebar itens exclusively for smaller screens  -->
+                    <li class="nav-item dropdown d-sm-block d-md-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
+                        <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                            <a class="dropdown-item" href="#top">Dashboard</a>
+                            <a class="dropdown-item" href="#top">Profile</a>
+                            <a class="dropdown-item" href="#top">Tasks</a>
+                            <a class="dropdown-item" href="#top">Etc ...</a>
+                        </div>
+                    </li>                   
+                     <!-- Smaller devices menu END -->
+                </ul>
+            </div>
+        </nav><!-- NavBar END -->
+        <!-- Bootstrap row -->
+        <div class="row" id="body-row">
+            <!-- Sidebar -->
+            <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+                <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+                <!-- Bootstrap List Group -->
+                <ul class="list-group">
+                    <!-- Separator with title -->
+                    <!-- <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                        <small>MAIN MENU</small>
+                    </li> -->
+                    <!-- /END Separator -->
+                    <!-- Menu with submenu -->
+                    <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed">Dashboard</span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+                    <!-- Submenu content -->
+                    <!-- <div id='submenu1' class="collapse sidebar-submenu">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Charts</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Reports</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Tables</span>
+                        </a>
+                    </div> -->
+                    <!-- <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-user fa-fw mr-3"></span>
+                            <span class="menu-collapsed">Profile</span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a> -->
+                    <!-- Submenu content -->
+                    <!-- <div id='submenu2' class="collapse sidebar-submenu">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Settings</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Password</span>
+                        </a>
+                    </div> -->
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-tasks fa-fw mr-3"></span>
+                            <span class="menu-collapsed">Contracts</span>
+                        </div>
+                    </a>
+                    <!-- Separator with title -->
+                    <!-- <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                        <small>OPTIONS</small>
+                    </li> -->
+                    <!-- /END Separator -->
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <!-- <i class="fa fa-file-text-o" aria-hidden="true"></i> -->
+                            <!-- <span class="fa fa-calendar fa-fw mr-3"></span> -->
+                            <span class="fa fa-file-text-o mr-3"></span>
+                            <span class="menu-collapsed">Reports </span>
+                        </div>
+                    </a>
+                   
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-search-plus mr-3"></span>
+                           
+                            <span class="menu-collapsed">Search </span>
+                        </div>
+                    </a>
+                    <!-- Separator without title -->
+                    <!-- <li class="list-group-item sidebar-separator menu-collapsed"></li> -->
+                    <!-- /END Separator -->
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-user-plus mr-3"></span>
+                            <span class="menu-collapsed">UserManagement </span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-cogs mr-3"></span>
+                            <span class="menu-collapsed">Setups </span>
+                        </div>
+                    </a>
+                    <!-- <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                            <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                        </div>
+                    </a> -->
+                </ul><!-- List Group END-->
+            </div><!-- sidebar-container END -->
+            <!-- MAIN -->
+            <div class="col p-4">
+                <form class="form-inline">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Clauses</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                      <option selected>Select Contract Type...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Template</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                      <option selected>Select Template...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  
+                    <!-- <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+                    </div> -->
+                  
+                    <button type="submit" class="btn btn-primary my-1">Add Clause</button>
+                  </form>
+               <table id="tableexample" class="table table-striped" style="widows: 100%;">
+                  <thead>
+                      <tr>
+                        <th scope="col">#Sr. NO.</th>
+                        <th scope="col">Contract Type</th>
+                        <th scope="col">Clause Name<select class="selectpicker">
+                            <i class="glyphicon glyphicon-glass">Mustard</i>
+                          </select>
+                          </th>
+                        <th scope="col">Mandatory</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">4</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                          <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">6</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                          <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                          </tr>
+                          <tr>
+                              <th scope="row">9</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">10</th>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                              <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">11</th>
+                              <td>Larry</td>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                              <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">13</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">14</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">15</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                  <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">16</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                  <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                  <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">17</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                  <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                  <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">18</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                    <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">19</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                    <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">20</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                    <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">21</th>
+                                      <td>Mark</td>
+                                      <td>Otto</td>
+                                      <td>@mdo</td>
+                                      <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">22</th>
+                                      <td>Jacob</td>
+                                      <td>Thornton</td>
+                                      <td>@fat</td>
+                                      <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">23</th>
+                                      <td>Larry</td>
+                                      <td>the Bird</td>
+                                      <td>@twitter</td>
+                                      <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">24</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">25</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">26</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                      </tr>
+                                      <tr>
+                                          <th scope="row">27</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                          <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                          <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">28</th>
+                                          <td>Jacob</td>
+                                          <td>Thornton</td>
+                                          <td>@fat</td>
+                                          <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                          <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">29</th>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                          <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">30</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">31</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">32</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">33</th>
+                                              <td>Mark</td>
+                                              <td>Otto</td>
+                                              <td>@mdo</td>
+                                              <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                              <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">34</th>
+                                              <td>Jacob</td>
+                                              <td>Thornton</td>
+                                              <td>@fat</td>
+                                              <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                              <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">35</th>
+                                              <td>Larry</td>
+                                              <td>the Bird</td>
+                                              <td>@twitter</td>
+                                              <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                              <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">36</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">37</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">38</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                              </tr>
+                                              <tr>
+                                                  <th scope="row">39</th>
+                                                  <td>Mark</td>
+                                                  <td>Otto</td>
+                                                  <td>@mdo</td>
+                                                  <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                  <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">40</th>
+                                                  <td>Jacob</td>
+                                                  <td>Thornton</td>
+                                                  <td>@fat</td>
+                                                  <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                  <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">41</th>
+                                                  <td>Larry</td>
+                                                  <td>the Bird</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                                <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                                <tr>
+                                                    <th scope="row">42</th>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">43</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                     <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                     <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">44</th>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                                                  </tr>
+                    </tbody>
+                   </table>
+                   <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                 
+                <!-- <h1 class="display-4">Collapsing Sidebar Menu</h1>
+                <div class="card">
+                    <h5 class="card-header font-weight-light">Requirements</h5>
+                    <div class="card-body">
+                        <ul>
+                            <li>JQuery</li>
+                            <li>Bootstrap 4.3</li>
+                            <li>FontAwesome</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div><!-- Main Col END -->
+        </div><!-- body-row END -->
+
+    
         </body>
     </html>
-   
+
+    
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    
+    <script type="text/javascript" src="./common.js"></script>
+
+  

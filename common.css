@@ -1,9 +1,9 @@
-.wrapper-progressBar {
+.ditem wrapper-progressBar {
     width: 100%
 }
 
 
-.progressBar li {
+.ditem progressBar li {
     list-style-type: none;
     float: left;
     width: 33%;
@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.progressBar li:before {
+.ditem progressBar li:before {
     content: " ";
     line-height: 30px;
     border-radius: 50%;
@@ -24,7 +24,7 @@
     background-color: white
 }
 
-.progressBar li:after {
+.ditem progressBar li:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -35,81 +35,66 @@
     z-index: -1;
 }
 
-.progressBar li:first-child:after {
+.ditem progressBar li:first-child:after {
     content: none;
 }
-.progressBar li.active {
+.ditem progressBar li.active {
   color: #333333;
   font-size: 14;
 }
-/* .progressBar li.active {
-    color: dodgerblue;
-} */
 
-.progressBar li.active:before {
+
+.ditem progressBar li.active:before {
   border-color: #9E9E9E;
   background-color:#FE7815;
 }
 
 
-.progressBar li.active + li:after {
+.ditem progressBar li.active + li:after {
     background-color: #FE7815
 }
 
 
 
-#abc {
+.ditem abc {
     color: 'red';
   }
 
   
-/* #inputEmail4 {
-    display: block;
-    height: calc(1em + 0.75rem + 1px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-} */
 
-.img-thumbnail
+
+.ditem img-thumbnail
 { 
-    width: 85;
-    height: 65;
+    width: 35px;
+    height: 35px;
 } 
-.btn-file {
+.ditem btn-file {
     position: relative;
     overflow: hidden;
 }
 
 /* <-- Company logo--> */
-#customFile .custom-file-control:lang(en)::after {
+.ditem #customFile .custom-file-control:lang(en)::after {
     content: "Select file...";
   }
   
-  #customFile .custom-file-control:lang(en)::before {
+  .ditem #customFile .custom-file-control:lang(en)::before {
     content: "Click me";
   }
   
   /*when a value is selected, this class removes the content */
-  .custom-file-control.selected:lang(en)::after {
+  .ditem custom-file-control.selected:lang(en)::after {
     content: "" !important;
   }
   
-  .custom-file {
+  .ditem custom-file {
     overflow: hidden;
   }
-  .custom-file-control {
+  .ditem custom-file-control {
     white-space: nowrap;
   }
  
-  .center {
+  .ditem center {
     display :table;
     text-align: center;
     margin:auto;
@@ -120,86 +105,96 @@
     border: 5px solid #73AD21; 
     padding: 20px; */
   }
-  .bodyline{
+  .ditem bodyline{
     padding: 70px 90px;
   }
-  .menu-text a{
+  .ditem menu-text a{
     color:#212529;
   }
-  .container-fluid{
+  .ditem container-fluid{
     padding-right: 66px;
     padding-left: 66px;
   }
-  .form-sungroup {
+  .ditem form-sungroup {
     padding-left: 70px;
 }
-.btn-primary {
+.ditem btn-primary {
   color: #fff;
   background-color: var(--orange);
   border-color: var(--light);
 }
 
-.body-color label {
+.ditem body-color label {
   color: #212529;
 }
-.form-control{
+.ditem form-control{
   font-size: 12px;
 }
-.custom-file {
+.ditem custom-file {
   font-size: 12px;
 
 }
-.form-control {
+.ditem form-control {
   border: 1px solid #dc3545;
  
 }
-.h6 {
+.ditem h6 {
   font-size: 12px;
 }
-form.needs-validation {
+.ditem form.needs-validation {
   font-size: 15px;
 }
-input#inputEmail4 {
+.ditem input#inputEmail4 {
 
   border: 1px solid #212529;
 }
-.required {
+.ditem required {
   color: red;
 }
-.img-thumbnail {
+.ditem img-thumbnail {
   padding: 0px;
-  border: 0px;
+  /* border: 0px; */
 }
-.img-thumbnail {
+.ditem img-thumbnail {
   width: 310px;
   height: 45px;
 }
-.nav-link {
+.ditem nav-link {
   font-size: 22px;
   color: #333333;
 }
-.h2 {
+.ditem h2 {
   font-size: 26px;
   color: #333333;
   
 }
-.active{
+.ditem active{
   color: #FE7815;
 }
-.progressbar li {
+.ditem progressbar li {
   font-size: 14;
 }
-.navbar navbar-light bg-light{
+.ditem navbar navbar-light bg-light{
   background-color: #eff3f7;
 }
-button.btn.btn-primary {
+.ditem button.btn.btn-primary {
   font-size: 13;
   padding: 12px;
 }
-a.stretched-link {
+.ditem a.stretched-link {
   font-size: 13px;
   color:#1458A8
 }
-/* .form-control{
-  border-block-color: black;
-} */
+
+.ditem centre {
+  text-align: center;
+}
+.ditem btn-primary {
+  color: #fff;
+  background-color: var(--orange);
+
+}
+.img-thumbnail {
+  max-width: 145px;
+  padding: 25px;
+}
