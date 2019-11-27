@@ -1,9 +1,9 @@
-.ditem wrapper-progressBar {
+.ditem .wrapper-progressBar {
     width: 100%
 }
 
 
-.ditem progressBar li {
+.ditem .progressBar li {
     list-style-type: none;
     float: left;
     width: 33%;
@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.ditem progressBar li:before {
+.ditem .progressBar li:before {
     content: " ";
     line-height: 30px;
     border-radius: 50%;
@@ -24,7 +24,7 @@
     background-color: white
 }
 
-.ditem progressBar li:after {
+.ditem .progressBar li:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -35,22 +35,22 @@
     z-index: -1;
 }
 
-.ditem progressBar li:first-child:after {
+.ditem .progressBar li:first-child:after {
     content: none;
 }
-.ditem progressBar li.active {
+.progressBar li.active {
   color: #333333;
   font-size: 14;
 }
 
 
-.ditem progressBar li.active:before {
+.ditem .progressBar li.active:before {
   border-color: #9E9E9E;
   background-color:#FE7815;
 }
 
 
-.ditem progressBar li.active + li:after {
+.ditem .progressBar li.active + li:after {
     background-color: #FE7815
 }
 
@@ -63,11 +63,11 @@
   
 
 
-.ditem img-thumbnail
+/* .ditem img-thumbnail
 { 
     width: 35px;
     height: 35px;
-} 
+}  */
 .ditem btn-file {
     position: relative;
     overflow: hidden;
@@ -98,12 +98,7 @@
     display :table;
     text-align: center;
     margin:auto;
-    /* text-align: center;
-
-    margin: auto;
-    width: 100%;
-    border: 5px solid #73AD21; 
-    padding: 20px; */
+    
   }
   .ditem bodyline{
     padding: 70px 90px;
@@ -111,26 +106,26 @@
   .ditem menu-text a{
     color:#212529;
   }
-  .ditem container-fluid{
+  .container-fluid{
     padding-right: 66px;
     padding-left: 66px;
   }
-  .ditem form-sungroup {
+  .form-sungroup {
     padding-left: 70px;
 }
-.ditem btn-primary {
+.btn-primary {
   color: #fff;
   background-color: var(--orange);
   border-color: var(--light);
 }
 
-.ditem body-color label {
+.body-color label {
   color: #212529;
 }
-.ditem form-control{
+.form-control{
   font-size: 12px;
 }
-.ditem custom-file {
+.custom-file {
   font-size: 12px;
 
 }
@@ -148,10 +143,10 @@
 
   border: 1px solid #212529;
 }
-.ditem required {
+.ditem .required {
   color: red;
 }
-.ditem img-thumbnail {
+.img-thumbnail {
   padding: 0px;
   /* border: 0px; */
 }
@@ -181,7 +176,7 @@
   font-size: 13;
   padding: 12px;
 }
-.ditem a.stretched-link {
+a.stretched-link {
   font-size: 13px;
   color:#1458A8
 }
@@ -194,7 +189,9 @@
   background-color: var(--orange);
 
 }
+
 .img-thumbnail {
   max-width: 145px;
   padding: 25px;
+  margin: inherit;
 }
