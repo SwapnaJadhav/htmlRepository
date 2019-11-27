@@ -38,7 +38,7 @@
 .ditem .progressBar li:first-child:after {
     content: none;
 }
-.progressBar li.active {
+.ditem .progressBar li.active {
   color: #333333;
   font-size: 14;
 }
@@ -56,7 +56,7 @@
 
 
 
-.ditem abc {
+.ditem .abc {
     color: 'red';
   }
 
@@ -68,7 +68,7 @@
     width: 35px;
     height: 35px;
 }  */
-.ditem btn-file {
+.ditem .btn-file {
     position: relative;
     overflow: hidden;
 }
@@ -87,23 +87,23 @@
     content: "" !important;
   }
   
-  .ditem custom-file {
+  .ditem .custom-file {
     overflow: hidden;
   }
-  .ditem custom-file-control {
+  .ditem .custom-file-control {
     white-space: nowrap;
   }
  
-  .ditem center {
+  .ditem .center {
     display :table;
     text-align: center;
     margin:auto;
     
   }
-  .ditem bodyline{
+  .ditem .bodyline{
     padding: 70px 90px;
   }
-  .ditem menu-text a{
+  .ditem .menu-text a{
     color:#212529;
   }
   .container-fluid{
@@ -129,11 +129,11 @@
   font-size: 12px;
 
 }
-.ditem form-control {
+.ditem .form-control {
   border: 1px solid #dc3545;
  
 }
-.ditem h6 {
+.ditem .h6 {
   font-size: 12px;
 }
 .ditem form.needs-validation {
@@ -146,24 +146,24 @@
 .ditem .required {
   color: red;
 }
-.img-thumbnail {
+.ditem .img-thumbnail {
   padding: 0px;
   /* border: 0px; */
 }
-.ditem img-thumbnail {
+.ditem .img-thumbnail {
   width: 310px;
   height: 45px;
 }
-.ditem nav-link {
+.ditem .nav-link {
   font-size: 22px;
   color: #333333;
 }
-.ditem h2 {
+.ditem .h2 {
   font-size: 26px;
   color: #333333;
   
 }
-.ditem active{
+.ditem .active{
   color: #FE7815;
 }
 .ditem progressbar li {
@@ -181,10 +181,10 @@ a.stretched-link {
   color:#1458A8
 }
 
-.ditem centre {
+.ditem .centre {
   text-align: center;
 }
-.ditem btn-primary {
+.ditem .btn-primary {
   color: #fff;
   background-color: var(--orange);
 
@@ -194,4 +194,8 @@ a.stretched-link {
   max-width: 145px;
   padding: 25px;
   margin: inherit;
+  border: none;
+}
+.nav {
+  padding-left: 90px;
 }
