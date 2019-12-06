@@ -63,11 +63,7 @@
   
 
 
-/* .ditem img-thumbnail
-{ 
-    width: 35px;
-    height: 35px;
-}  */
+
 .ditem .btn-file {
     position: relative;
     overflow: hidden;
@@ -106,7 +102,7 @@
   .ditem .menu-text a{
     color:#212529;
   }
-  .container-fluid{
+  .ditem .container-fluid{
     padding-right: 66px;
     padding-left: 66px;
   }
@@ -166,7 +162,7 @@
 .ditem .active{
   color: #FE7815;
 }
-.ditem progressbar li {
+.ditem .progressbar li {
   font-size: 14;
 }
 .ditem navbar navbar-light bg-light{
@@ -196,6 +192,6 @@ a.stretched-link {
   margin: inherit;
   border: none;
 }
-.nav {
+.ditem .nav {
   padding-left: 90px;
 }

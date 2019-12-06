@@ -1,4 +1,3 @@
-
 $('#body-row .collapse').collapse('hide'); 
 
 // Collapse/Expand icon
@@ -27,6 +26,7 @@ function SidebarCollapse () {
     $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
 }
 
-// $(document).ready(function() {
-//   $('#tableexample').DataTable();
-// } );
+
+//   $(function() {
+//     $('#toggle-one').bootstrapToggle();
+//   })

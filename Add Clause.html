@@ -1,5 +1,242 @@
 <html>
     <head>
+
+      
+      <!--  <script type="text/javascript" src="js\jquery-3.3.1.slim.min.js"></script>
+        <script type="text/javascript" src="js\bootstrap.js"></script>
+
+        <script type="text/javascript" src="js\popper.min.js"></script>
+
         
+        <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="./clausesidebar.css">
+<link rel="stylesheet" type="text/css" href="./AddClause.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+       
     </head>
-</html>
+        <body class="whole">
+          <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                    <!-- <span id="collapse-text" class="menu-collapsed">Collapse</span> -->
+                </div>
+            </a>
+            <div>
+                <!-- <img src="C:\Users\Chaitalee\Desktop\hTML_github\htmlRepository\Sundeus logo (2).svg" alt="..." class="img-thumbnail"> -->
+                <!-- <img src="C:\Users\Chaitalee\Desktop\hTML_github\htmlRepository\Sundeus logo (2).svg" alt="..." class="img-thumbnail"> -->
+
+                <img src="C:\Users\Chaitalee\Desktop\hTML_github\htmlRepository\Sundeus logo (2).svg" width="80" height="30" class="img-thumbnail">
+
+              </div>
+          
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#top"><i class="fa fa-search-plus" aria-hidden="true"></i> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top"><i class="fa fa-bell" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    </li>
+                    
+                    <li class="nav-item dropdown d-sm-block d-md-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
+                        <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                            <a class="dropdown-item" href="#top">Dashboard</a>
+                            <a class="dropdown-item" href="#top">Profile</a>
+                            <a class="dropdown-item" href="#top">Tasks</a>
+                            <a class="dropdown-item" href="#top">Etc ...</a>
+                        </div>
+                    </li>                   
+                     <!-- Smaller devices menu END -->
+                </ul>
+            </div>
+        </nav><!-- NavBar END -->
+        <!-- Bootstrap row -->
+        <div class="row" id="body-row">
+            <!-- Sidebar -->
+            <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+               
+                <ul class="list-group">
+                   
+                    <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed">Dashboard</span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+                   
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-tasks fa-fw mr-3"></span>
+                            <span class="menu-collapsed">Contracts</span>
+                        </div>
+                    </a>
+                  
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            
+                            <span class="fa fa-file-text-o mr-3"></span>
+                            <span class="menu-collapsed">Reports </span>
+                        </div>
+                    </a>
+                   
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-search-plus mr-3"></span>
+                           
+                            <span class="menu-collapsed">Search </span>
+                        </div>
+                    </a>
+                  
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-user-plus mr-3"></span>
+                            <span class="menu-collapsed">UserManagement </span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-dark list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-cogs mr-3"></span>
+                            <span class="menu-collapsed">Setups </span>
+                        </div>
+                    </a>
+                  
+                </ul> <!-- List Group END-->
+            </div> <!-- sidebar-container END -->
+            <!-- MAIN -->
+            <div class="col">
+            <form class="body-margin">
+                    <h5 class="mb-5"> Add Clause</h5>
+
+                 <div class="row">
+                     <div class="col-6">
+
+                            <div class="form-group">
+                                    <label class="" for="inputEmail4"><b>Contract Type</b></label>
+                                    <select id="inputEmail4" class="form-control">
+                                        <option selected></option>
+                                        <option>...</option>
+                                      </select>
+                                  </div>
+
+
+                     </div>
+                     <div class="col-6">
+                         
+
+                            <div class="form-group">
+                                    <label for="inputPassword4"><b>Clause Name</b></label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                 
+                                  </div>
+
+
+                        </div>
+                        <div class="col-6">
+                         
+
+                                <div class="form-group">
+                                        <label for="inputCity"><b>Clause Description</b></label>
+                    <input type="text" class="form-control" id="inputCity">
+                 
+                                      </div>
+
+
+                            </div>
+                            <div class="col-6">
+                         
+
+                                    <div class="form-group">
+                                <label for="language"><b>Language</b></label>
+                               <select id="language" class="form-control">
+                                    <option selected></option>
+                                    <option>...</option>
+                                  </select>
+                     
+                             </div>
+    
+    
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        
+                                            <label for="pp"><b>Mandatory</b></label>
+                                            <input type="checkbox" checked data-toggle="toggle" id="pp" data-size="small">
+
+                                    </div>
+                                    
+                                       
+                               </div>
+                               <div class="col-3">
+                                    <div class="form-group">
+                                            <label for="switch1"><b>Track</b></label> 
+                                            <input type="checkbox" checked data-toggle="toggle"  id="switch1" data-size="small">
+
+                                          
+                           </div>
+                        </div>
+                           <div class="col-3">
+                                <div class="form-group">
+                                        <label for="switch2"><b>Conditional</b></label>
+                                        <input type="checkbox" checked data-toggle="toggle" id="switch2" data-size="small">
+                                 </div>
+                       </div>
+                                <div class="col-6">
+                         
+
+                                        <div class="form-group textmargin">
+                                                <label for="exampleFormControlTextarea1"><b>Clause Text</b></label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                 </div>
+        
+        
+                                    </div>
+                                   
+                                    <div class="col-12">
+                                            
+                                                  
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+            
+                                        </div>
+                                        
+                 </div>
+                
+
+              </form>
+            </div>
+           
+        </div>
+
+        
+        </body>
+    </html>
+
+    
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    
+     <script type="text/javascript" src="./common.js"></script>
+     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+  

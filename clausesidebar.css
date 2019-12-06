@@ -30,6 +30,16 @@
 .sidebar-submenu {
   font-size: 0.9rem;
 }
+.mr-2, .mx-2 {
+  margin-right: 40px!important;
+}
+.list-group-item {
+  padding: 20px 15px;
+}
+.sidebar-expanded {
+  width: 260px;
+}
+
 
 /* Separators */
 .sidebar-separator-title {
@@ -98,7 +108,39 @@ a.page-link {
   background-color: #EFF3F7!important;
   padding: 0.5px 0.5px;
 }
-.list-group-item {
+/* .list-group-item {
   padding: .75rem 1.45rem;
+} */
+.mr-sm-2, .mx-sm-2 {
+  margin-right:50px!important;
 }
+.table td, .table th {
+  padding: .30rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+td {
+  font-size: smaller;
 
+}
+.my-1 mr-2 {
+  margin: 10px 50px 10px 50px;
+} 
+.my-1 mr-2 {
+  font-size: xx-small;
+}
+.margin-right {
+  margin-right: 30px;
+  /* margin-left: 30px; */
+}
+.whole{
+  line-height: 0.5;
+}
+a.bg-dark.list-group-item.list-group-item-action.d-flex.align-items-center {
+  width: 60px;
+}
+.custom-select{
+  height: calc(2em + .34rem + 3px);
+    padding: .4rem 1.77rem .4rem .55rem;
+  font-size: xx-small;
+}
