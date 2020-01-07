@@ -188,7 +188,7 @@ a.stretched-link {
 
 .img-thumbnail {
   max-width: 145px;
-  padding: 25px;
+  padding: 1px;
   margin: inherit;
   border: none;
 }

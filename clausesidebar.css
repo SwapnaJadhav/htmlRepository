@@ -144,3 +144,18 @@ a.bg-dark.list-group-item.list-group-item-action.d-flex.align-items-center {
     padding: .4rem 1.77rem .4rem .55rem;
   font-size: xx-small;
 }
+.img-thumbnail {
+  max-width: 50px;
+}
+.fa.fa-sort-down {
+  font-size: 30px;
+}
+
+
+.list-group-item {
+    padding: 25px 10px;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
