@@ -1,52 +1,52 @@
-#body-row {
+.whole #body-row {
     margin-left:0;
     margin-right:0;
 }
-#sidebar-container {
+.whole #sidebar-container {
     min-height: 100vh;   
     background-color: #333;
     padding: 0;
 }
 
 /* Sidebar sizes when expanded and expanded */
-.sidebar-expanded {
+.whole .sidebar-expanded {
     width: 230px;
 }
-.sidebar-collapsed {
+.whole .sidebar-collapsed {
     width: 60px;
 }
 
 /* Menu item*/
-#sidebar-container .list-group a {
+.whole #sidebar-container .list-group a {
     height: 50px;
     color: white;
 }
 
 /* Submenu item*/
-#sidebar-container .list-group .sidebar-submenu a {
+.whole #sidebar-container .list-group .sidebar-submenu a {
     height: 45px;
     padding-left: 30px;
 }
-.sidebar-submenu {
+.whole .sidebar-submenu {
     font-size: 0.9rem;
 }
 
 /* Separators */
-.sidebar-separator-title {
+.whole .sidebar-separator-title {
     background-color: #333;
     height: 35px;
 }
-.sidebar-separator {
+.whole .sidebar-separator {
     background-color: #333;
     height: 25px;
 }
-.logo-separator {
+.whole .logo-separator {
     background-color: #333;    
     height: 60px;
 }
 
 /* Closed submenu icon */
-#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+.whole #sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
   content: " \f0d7";
   font-family: FontAwesome;
   display: inline;
@@ -54,31 +54,31 @@
   padding-left: 10px;
 }
 /* Opened submenu icon */
-#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+.whole #sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
   content: " \f0da";
   font-family: FontAwesome;
   display: inline;
   text-align: right;
   padding-left: 10px;
 }
-a.bg-dark.list-group-item.list-group-item-action.d-flex.align-items-center {
+.whole a.bg-dark.list-group-item.list-group-item-action.d-flex.align-items-center {
     width: 60px;
   }
-  .bg-light {
+  .whole .bg-light {
       background-color: none;
   }
-  .body-margin {
+  .whole .body-margin {
     margin-left: 30px;
 }
-.form-row>.col, .form-row>[class*=col-] {
+.whole .form-row>.col, .form-row>[class*=col-] {
     padding-right: 280px;
     padding-left: 125px;
 }
 
-.btn btn-primary {
+.whole .btn btn-primary {
     padding: 10px 25px;
 }
-nav.navbar.navbar-light.bg-light {
+.whole nav.navbar.navbar-light.bg-light {
     background-color: var(--white)!important;
 }
 .whole {
@@ -90,18 +90,18 @@ nav.navbar.navbar-light.bg-light {
 
 /* Switch Yes No
 ========================== */
-.switch-yes-no {
+.whole .switch-yes-no {
 	padding: 0;
 	margin: 15px 0 0;
 	background: #FFF;
 	border-radius: 0;
 	background-image: none;
 }
-.switch-yes-no .switch-label {
+.whole .switch-yes-no .switch-label {
 	box-shadow: none;
 	background: none;
 }
-.switch-yes-no .switch-label:after, .switch-yes-no .switch-label:before {
+.whole .switch-yes-no .switch-label:after, .switch-yes-no .switch-label:before {
 	width: 100%;
 	height: 70%;
 	top: 5px;
@@ -110,34 +110,34 @@ nav.navbar.navbar-light.bg-light {
 	padding-top: 10%;
 	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2), inset 0 0 3px rgba(0, 0, 0, 0.1);
 }
-.switch-yes-no .switch-label:after {
+.whole .switch-yes-no .switch-label:after {
 	color: #FFFFFF;
 	background: #32CD32;
 	backface-visibility: hidden;
 	transform: rotateY(180deg);
 }
-.switch-yes-no .switch-label:before {
+.whole .switch-yes-no .switch-label:before {
 	background: #eceeef;
 	backface-visibility: hidden;
 }
-.switch-yes-no .switch-handle {
+.whole .switch-yes-no .switch-handle {
 	display: none;
 }
-.switch-yes-no .switch-input:checked ~ .switch-label {
+.whole .switch-yes-no .switch-input:checked ~ .switch-label {
 	background: #FFF;
 	border-color: #0088cc;
 }
-.switch-yes-no .switch-input:checked ~ .switch-label:before {
+.whole .switch-yes-no .switch-input:checked ~ .switch-label:before {
 	transform: rotateY(180deg)
 }
-.switch-yes-no .switch-input:checked ~ .switch-label:after {
+.whole .switch-yes-no .switch-input:checked ~ .switch-label:after {
 	transform: rotateY(0)
 }
-.form-group {
+.whole .form-group {
     color: #333333;
     font-size: 16px;
 }
 
-.mb-5 {
+.whole .mb-5 {
     color: #013164;
 }
