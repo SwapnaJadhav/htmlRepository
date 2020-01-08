@@ -1,62 +1,62 @@
-#body-row {
+.whole #body-row {
   margin-left:0;
   margin-right:0;
 }
-#sidebar-container {
+.whole #sidebar-container {
   min-height: 100vh;   
   background-color: #333;
   padding: 0;
 }
 
 /* Sidebar sizes when expanded and expanded */
-.sidebar-expanded {
+.whole .sidebar-expanded {
   width: 230px;
 }
-.sidebar-collapsed {
+.whole .sidebar-collapsed {
   width: 60px;
 }
 
 /* Menu item*/
-#sidebar-container .list-group a {
+.whole #sidebar-container .list-group a {
   height: 50px;
   color: white;
 }
 
 /* Submenu item*/
-#sidebar-container .list-group .sidebar-submenu a {
+.whole #sidebar-container .list-group .sidebar-submenu a {
   height: 45px;
   padding-left: 30px;
 }
-.sidebar-submenu {
+.whole .sidebar-submenu {
   font-size: 0.9rem;
 }
-.mr-2, .mx-2 {
+.whole .mr-2, .mx-2 {
   margin-right: 40px!important;
 }
-.list-group-item {
+.whole .list-group-item {
   padding: 20px 15px;
 }
-.sidebar-expanded {
+.whole .sidebar-expanded {
   width: 260px;
 }
 
 
 /* Separators */
-.sidebar-separator-title {
+.whole sidebar-separator-title {
   background-color: #333;
   height: 35px;
 }
-.sidebar-separator {
+.whole .sidebar-separator {
   background-color: #333;
   height: 25px;
 }
-.logo-separator {
+.whole .logo-separator {
   background-color: #333;    
   height: 60px;
 }
 
 /* Closed submenu icon */
-#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+.whole #sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
 content: " \f0d7";
 font-family: FontAwesome;
 display: inline;
@@ -64,7 +64,7 @@ text-align: right;
 padding-left: 10px;
 }
 /* Opened submenu icon */
-#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+.whole #sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
 content: " \f0da";
 font-family: FontAwesome;
 display: inline;
@@ -72,31 +72,31 @@ text-align: right;
 padding-left: 10px;
 }
 
-.pagination {
+.whole .pagination {
   float: right;
 }
 .whole {
   padding: 70px 90px 70px 90px;
 }
-a.bg-dark.list-group-item.list-group-item-action.d-flex.align-items-center {
+.whole a.bg-dark.list-group-item.list-group-item-action.d-flex.align-items-center {
   width: 0px;
 }
-i.fa.fa-search-plus {
+.whole i.fa.fa-search-plus {
   color: #333333;
 }
-i.fa.fa-bell {
+.whole i.fa.fa-bell {
   color: #333333;
 }
-i.fa.fa-question-circle {
+.whole i.fa.fa-question-circle {
   color: #013164;
 }
-.btn-primary {
+.whole .btn-primary {
   color: #fff;
   background-color: #FE7815;
   border-color: #FE7815;
   margin-inline-start: auto;
 }
-a.page-link {
+.whole a.page-link {
   color: #FE7815;
 }
 .navbar.navbar-expand-md.navbar-dark.bg-primary {
@@ -104,43 +104,58 @@ a.page-link {
   /* padding: 2px 2px; */
 
 }
-.bg-primary {
+.whole .bg-primary {
   background-color: #EFF3F7!important;
   padding: 0.5px 0.5px;
 }
 /* .list-group-item {
   padding: .75rem 1.45rem;
 } */
-.mr-sm-2, .mx-sm-2 {
+.whole .mr-sm-2, .mx-sm-2 {
   margin-right:50px!important;
 }
-.table td, .table th {
+.whole .table td, .table th {
   padding: .30rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }
-td {
+.whole td {
   font-size: smaller;
 
 }
-.my-1 mr-2 {
+.whole .my-1 mr-2 {
   margin: 10px 50px 10px 50px;
 } 
-.my-1 mr-2 {
+.whole .my-1 mr-2 {
   font-size: xx-small;
 }
-.margin-right {
+.whole .margin-right {
   margin-right: 30px;
   /* margin-left: 30px; */
 }
 .whole{
   line-height: 0.5;
 }
-a.bg-dark.list-group-item.list-group-item-action.d-flex.align-items-center {
+.whole a.bg-dark.list-group-item.list-group-item-action.d-flex.align-items-center {
   width: 60px;
 }
-.custom-select{
+.whole.custom-select{
   height: calc(2em + .34rem + 3px);
     padding: .4rem 1.77rem .4rem .55rem;
   font-size: xx-small;
+}
+.whole .img-thumbnail {
+  max-width: 50px;
+}
+.whole .fa.fa-sort-down {
+  font-size: 30px;
+}
+
+
+.whole .list-group-item {
+    padding: 25px 10px;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
 }

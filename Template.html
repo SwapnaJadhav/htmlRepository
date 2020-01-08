@@ -22,7 +22,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
        
     </head>
-    
         <body class="whole">
           <nav class="navbar navbar-expand-md navbar-dark bg-primary">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,11 +36,13 @@
             <div>
                 <!-- <img src="C:\Users\Chaitalee\Desktop\hTML_github\htmlRepository\Sundeus logo (2).svg" alt="..." class="img-thumbnail"> -->
                 <!-- <img src="C:\Users\Chaitalee\Desktop\hTML_github\htmlRepository\Sundeus logo (2).svg" alt="..." class="img-thumbnail"> -->
-
-                <!-- <img src="C:\Users\Chaitalee\Desktop\hTML_github\htmlRepository\Sundeus logo (2).svg" width="80" height="30" class="img-thumbnail"> -->
+ <!-- <img src="C:\Users\Chaitalee\Desktop\hTML_github\htmlRepository\Sundeus logo (2).svg" width="80" height="30" class="img-thumbnail"> -->
 
               </div>
-           
+            <!-- <a class="navbar-brand" href="#">
+                <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                <span class="menu-collapsed">Brand</span>
+            </a> -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -132,7 +133,7 @@
             <!-- MAIN -->
             <div class="col p-4">
                 <form class="form-inline">
-                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Clauses</label>
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Contract Template</label>
                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Contract Type</label>
                     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                       <option selected>Select Contract Type...</option>
@@ -140,30 +141,20 @@
                       <option value="2">Two</option>
                       <option value="3">Three</option>
                     </select>
-                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Template</label>
-                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                      <option selected>Select Template...</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  
-                   
-                  
                     <button type="submit" class="btn btn-primary my-1">Add Clause</button>
                   </form>
                <table id="tableexample" class="table table-striped" style="widows: 100%;">
                   <thead>
                       <tr>
                         <th scope="col">#Sr. NO.</th>
-                        <th scope="col">Clause Name&nbsp;<i class="fa fa-chevron-down"></i></th>
+                        <th scope="col">Template Name&nbsp;<i class="fa fa-chevron-down"></i></th>
                         <th scope="col">Contract Type&nbsp;<i class="fa fa-chevron-down"></i></th>
-                        <th scope="col">Mandatory&nbsp;<i class="fa fa-chevron-down"></i></th>
+                        <!-- <th scope="col">Mandatory&nbsp;<i class="fa fa-chevron-down"></i></th> -->
                         <th scope="col">Version</th>
                         <th scope="col">Status</th>
                         <th scope="col">Created On&nbsp;<i class="fa fa-chevron-down"></i></th>
                         <th scope="col">Created By</th>
-                        <th scope="col">Action</th>
+                       
                       </tr>
                     </thead>
                     <tbody>
@@ -171,54 +162,43 @@
                         <th scope="row">1</th>
                         <td>Mark</td>
                         <td>Otto</td>
-                        <td>@mdo</td>
                         <td>1.0</td>
                         <td>initiated</td>
                         <td>26/12/19</td>
                         <td>Swapna</td>
-                        <td>
-                        <span class="margin-right">  <i class="fa fa-pencil" aria-hidden="true"></i></span>
-                          <i class="fa fa-trash" aria-hidden="true"></i></td>
-                        <!-- <td><i class="fa fa-trash" aria-hidden="true"></i></td> -->
-                      </tr>
+                     </tr>
                       <tr>
                         <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
-                        <td>@fat</td>
                         <td>2.0</td>
                         <td>pending</td>
                         <td>25/12/19</td>
                         <td>Sapna</td>
-                        <td>
-                          <span class="margin-right"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                            <span><i class="fa fa-trash" aria-hidden="true"></i></span>
-                            </td>
+                      
+                        
                       </tr>
                       <tr>
                         <th scope="row">3</th>
                         <td>Larry</td>
                         <td>the Bird</td>
-                        <td>@twitter</td>
+                       
                         <td>3.0</td>
                         <td>initiated</td>
                         <td>24/12/19</td>
                         <td>Swapnil</td>
-                        <td><span class="margin-right"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                          <i class="fa fa-trash" aria-hidden="true"></i></td>
+                       
                       </tr>
                       <tr>
                           <th scope="row">4</th>
                           <td>Mark</td>
                           <td>Otto</td>
-                          <td>@mdo</td>
                           <td>1.0</td>
-                        <td>initiated</td>
-                        <td>26/12/19</td>
-                        <td>pushkar</td>
-                          <td><span class="margin-right"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                            <i class="fa fa-trash" aria-hidden="true"></i></td>
-                        </tr>
+                          <td>initiated</td>
+                          <td>26/12/19</td>
+                          <td>pushkar</td>
+                         </tr>
+                        
                       
                     </tbody>
                    </table>
