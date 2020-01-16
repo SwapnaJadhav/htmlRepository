@@ -22,7 +22,7 @@
 html, 
 body{
   color: #000;
-  background-color: #fcaa2e !important;
+  background-color: #f5f5f5;
   font-family: "Roboto", sans-serif;
     }
     .contact-form {
@@ -71,4 +71,35 @@ body{
     .bs-example {
     	margin: 20px;
     }
+    .bg-dark {
+        background-color: #f5f5f5 !important;
+    }
+/* BOTTOM LINE */
+.about {
+    background:#fff;
+    padding: 2em;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+  }
+  
+  .about:after { /* this is the border */
+    content:"";
+    display:block;
+    width: 6em;
+    max-width:70%;
+    border-bottom: 0.3em solid #F3C577;
+    margin: 2em auto 0;
+  }
+  .body {
+      font-family: Avenir Heavy;
+      
+  }
+  .navbar-dark .navbar-nav .nav-link {
+      color: #333333;
+  }
 
+  
