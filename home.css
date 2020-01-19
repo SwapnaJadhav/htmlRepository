@@ -1,0 +1,18 @@
+/* a.btn.btn-primary {
+    background-color: #fe7815 !important;
+    
+} */
+.btn btn-primary {
+    background-color: #fe7815;
+
+}
+.card:hover {
+    background: #fe7815;
+    color: aliceblue;
+    border-radius: 5px ;
+    box-shadow: 5px 5px 10px #eff3f7;
+} 
+.abc {
+    margin-left: 38%;
+    padding-top: 5%;
+}
