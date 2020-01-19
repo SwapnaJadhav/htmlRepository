@@ -150,12 +150,19 @@ padding-left: 10px;
 .whole .fa.fa-sort-down {
   font-size: 30px;
 }
+.whole .list-group-item {
+  padding: 25px 10px;
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-bottom: 45px;
+  padding-left: 10px;
+}
 
-
+/* 
 .whole .list-group-item {
     padding: 25px 10px;
     padding-top: 25px;
     padding-right: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
     padding-left: 10px;
-}
+} */

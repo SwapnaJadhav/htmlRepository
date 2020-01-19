@@ -11,3 +11,6 @@
 .whole .mb-5 {
     color: #013164;
 }
+.whole .table-bordered td, .table-bordered th {
+    border: none;
+}
