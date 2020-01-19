@@ -124,117 +124,119 @@
                 </ul> <!-- List Group END-->
             </div> <!-- sidebar-container END -->
             <!-- MAIN -->
-            <div class="col">
-            <form class="body-margin">
-                    <h5 class="mb-5">Edit Clause</h5>
-
-                 <div class="row">
-                     <div class="col-3">
-
-                            <div class="form-group">
-                                    <label class="" for="inputEmail4"><b>Contract Type</b></label>
-                                    <select id="inputEmail4" class="form-control">
-                                        <option selected></option>
-                                        <option>...</option>
-                                      </select>
-                                  </div>
-
-
-                     </div>
-                     <div class="col-3">
-                         
-
-                            <div class="form-group">
-                                    <label for="inputPassword4"><b>Clause Name</b></label>
-                                    <input type="password" class="form-control" id="inputPassword4">
-                                 
-                                  </div>
-
-
-                        </div>
-                 </div>
-                <div class="row">
-                     <div class="col-3">
-                        <div class="form-group">
-                           <label for="inputCity"><b>Clause Description</b></label>
-                           <input type="text" class="form-control" id="inputCity">
-                 
-                         </div>
-                      </div>
-                     <div class="col-3">
-                      <div class="form-group">
-                            <label for="language"><b>Language</b></label>
-                               <select id="language" class="form-control">
-                                    <option selected></option>
-                                    <option>...</option>
-                                  </select>
+      
+                <div class="col p-4">
+                    <form class="form-inline">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Clauses</label>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Contract Type</label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                          <option selected>Select Contract Type...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Template</label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                          <option selected>Select Template...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      
+                       
+                      
+                        <button type="submit" class="btn btn-primary my-1">Add Clause</button>
+                      </form>
+                   <table id="tableexample" class="table table-striped" style="widows: 100%;">
+                      <thead>
+                          <tr>
+                            <th scope="col">#Sr. NO.</th>
+                            <th scope="col">Clause Name&nbsp;<i class="fa fa-chevron-down"></i></th>
+                            <th scope="col">Contract Type&nbsp;<i class="fa fa-chevron-down"></i></th>
+                            <th scope="col">Mandatory&nbsp;<i class="fa fa-chevron-down"></i></th>
+                            <th scope="col">Version</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Created On&nbsp;<i class="fa fa-chevron-down"></i></th>
+                            <th scope="col">Created By</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>1.0</td>
+                            <td>initiated</td>
+                            <td>26/12/19</td>
+                            <td>Swapna</td>
+                            <td>
+                            <span class="margin-right">  <i class="fa fa-pencil" aria-hidden="true"></i></span>
+                              <i class="fa fa-trash" aria-hidden="true"></i></td>
+                            <!-- <td><i class="fa fa-trash" aria-hidden="true"></i></td> -->
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>2.0</td>
+                            <td>pending</td>
+                            <td>25/12/19</td>
+                            <td>Sapna</td>
+                            <td>
+                              <span class="margin-right"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                                </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>3.0</td>
+                            <td>initiated</td>
+                            <td>24/12/19</td>
+                            <td>Swapnil</td>
+                            <td><span class="margin-right"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                              <i class="fa fa-trash" aria-hidden="true"></i></td>
+                          </tr>
+                          <tr>
+                              <th scope="row">4</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>1.0</td>
+                            <td>initiated</td>
+                            <td>26/12/19</td>
+                            <td>pushkar</td>
+                              <td><span class="margin-right"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                <i class="fa fa-trash" aria-hidden="true"></i></td>
+                            </tr>
+                          
+                        </tbody>
+                       </table>
+                       <nav aria-label="Page navigation example">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
                      
-                    </div>
+                  
                 </div>
-             </div>
-                                <div class="row">
-                                <div class="col-6">
-                         
-
-                                        <div class="form-group textmargin">
-                                                <label for="exampleFormControlTextarea1"><b>Clause Text</b></label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                                 </div>
-        
-        
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                    <div class="col-6">
-                                        <h6>Tagged Templates</h6>
-                                            <table class="table table-bordered">
-                                                    <thead>
-                                                      <tr>
-                                                        <th scope="col-sm-1"># Sr. No.</th>
-                                                        <th scope="col-sm-3">Template Name</th>
-                                                        
-                                                      </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                      <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Template 1</td>
-                                                        
-                                                      </tr>
-                                                      <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Template 2</td>
-                                                       
-                                                      </tr>
-                                                    
-                                                    </tbody>
-                                                  </table>
-                                 </div>
-                                 </div>
-                                   
-                                    <div class="col-12">
-                                            
-                                                  
-                                            <button type="submit" class="btn btn-primary">Back</button>
-                                            <button type="submit" class="btn btn-primary">Save</button>
-            
-                                        </div>
-                                        
-                                            
-
-
-
-
-                 
-                
-               
-               
-                
-                
-                
-
-              </form>
-            </div>
            
         </div>
 
