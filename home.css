@@ -16,3 +16,16 @@
     margin-left: 38%;
     padding-top: 5%;
 }
+.btn-secondary.disabled, .btn-secondary:disabled {
+    color: #fff;
+    background-color: #fe7815;
+    border-color: #eff3f7;
+}
+button.btn.btn-secondary.btn-lg {
+    padding: .2
+    rem 2rem;
+}
+.btn-primary {
+    background-color: #fe7815;
+    border-color: #eff3f7;
+}
