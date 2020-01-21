@@ -30,6 +30,10 @@
 .whole .sidebar-submenu {
     font-size: 0.9rem;
 }
+.col {
+    background-color: #eff3f7;
+}
+
 
 /* Separators */
 .whole .sidebar-separator-title {

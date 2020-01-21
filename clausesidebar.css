@@ -157,7 +157,9 @@ padding-left: 10px;
   padding-bottom: 45px;
   padding-left: 10px;
 }
-
+.whole nav.navbar.navbar-expand-md.navbar-dark.bg-primary {
+  background-color: white;
+}
 /* 
 .whole .list-group-item {
     padding: 25px 10px;

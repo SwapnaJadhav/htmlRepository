@@ -26,6 +26,51 @@ button.btn.btn-secondary.btn-lg {
     rem 2rem;
 }
 .btn-primary {
-    background-color: #fe7815;
+    background-color: #fe8e38;
     border-color: #eff3f7;
+}
+.img-fluid {
+    max-width: 60%;
+    height: auto;
+}
+img.img-fluid {
+    margin-left: 40%;
+}
+nav.navbar.navbar-expand-md.navbar-light.bg-white.fixed-top {
+    padding-left: 120px;
+    padding-right: 30px;
+}
+.w-100 {
+    width: none;
+}
+
+body {
+    font-family: palatino;
+    font-size: 18px;
+}
+
+
+.row {
+    
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.jumbotron {
+   
+    background-color: #e8e8e8;
+}
+.about:after {
+    content: "";
+    display: block;
+    width: 6em;
+    max-width: 70%;
+    border-bottom: 0.3em solid #fe8e38;
+    margin: 2em auto 0;
+}
+/* h2 {
+    border-bottom: 0.1em solid #fe7815;
+    width: 6em;
+} */
+h2 {
+    margin-bottom: -20px;
 }
