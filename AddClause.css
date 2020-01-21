@@ -114,7 +114,8 @@
 	padding-top: 10%;
 	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2), inset 0 0 3px rgba(0, 0, 0, 0.1);
 }
-.whole .switch-yes-no .switch-label:after {
+.whole .switch-ye
+s-no .switch-label:after {
 	color: #FFFFFF;
 	background: #32CD32;
 	backface-visibility: hidden;
@@ -144,4 +145,11 @@
 
 .whole .mb-5 {
     color: #013164;
+}
+.form-control {
+    height: 40px;
+}
+.col-3.mb-3 {
+    margin-right: 40px;
+    margin-left: 20px;
 }
