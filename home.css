@@ -4,13 +4,16 @@
 } */
 .btn btn-primary {
     background-color: #fe7815;
+    border-radius: 10%;
 
 }
 .card:hover {
     background: #fe7815;
-    color: aliceblue;
+    color: #fff;
     border-radius: 5px ;
     box-shadow: 5px 5px 10px #eff3f7;
+    /* border-color: #fff; */
+    /* border-top: 2px solid #fff; */
 } 
 .abc {
     margin-left: 38%;
@@ -86,4 +89,45 @@ h3 {
 /* img {
     height: 50px;
     with: 50px;
+} */
+/* hr.solid {
+    border-top: 2px solid #4e4e4e;
+} */
+/* hr.solid :hover {
+    border-top: 2px solid #fff;
+} */
+a {
+    color: var(--white);
+ 
+}
+a.btn.btn-primary:hover {
+    background: #fe7815;
+    border-color: #eff3f7;
+
+    /* color: aliceblue;
+    border-radius: 5px ;
+    box-shadow: 5px 5px 10px #eff3f7; */
+} 
+.btn {
+    border-radius: 25px;
+    border-color: #fe8e38;
+}
+/* a.btn.btn-primary.text {
+    border-radius: 25px;
+    border-color: orange;
+} */
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid var(--gray-dark);
+}
+hr:hover{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #fff;
+}
+/* .hr:hover {
+    border-top: #fff;
 } */
