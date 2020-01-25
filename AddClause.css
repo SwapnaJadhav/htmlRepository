@@ -147,7 +147,7 @@ s-no .switch-label:after {
     color: #013164;
 }
 .form-control {
-    height: 40px;
+    height: 30px;
 }
 .col-3.mb-3 {
     margin-right: 40px;
@@ -159,3 +159,26 @@ s-no .switch-label:after {
 .inner {
     background-color:gray;
 } */
+button.btn.btn-primary {
+    width: 88px;
+    height: 40px;
+}
+button.btn.btn-primary.mr-3 {
+    color: #333333;
+    background: #f6f6f6;
+    border-color: #333333;
+}
+/* .btn-success {
+   
+    background-color: #fe7915;
+    border-color: #fe7915;
+} */
+/* .btn-secondary {
+    background-color: #f6f6f6;
+    border-color: #6c757d;
+
+} */
+.btn {
+    
+    line-height: inherit;
+}

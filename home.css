@@ -12,8 +12,15 @@
     color: #fff;
     border-radius: 5px ;
     box-shadow: 5px 5px 10px #eff3f7;
+    /* background: url("Website_Images/Advance Feature Black.png") no-repeat; */
     /* border-color: #fff; */
     /* border-top: 2px solid #fff; */
+} 
+
+.card:hover hr {
+  
+    border-color: #fff; 
+    border-top: 2px solid #fff; 
 } 
 .abc {
     margin-left: 38%;
@@ -122,12 +129,67 @@ hr {
     border: 0;
     border-top: 1px solid var(--gray-dark);
 }
-hr:hover{
+/* .card .firstt{
+    width: 130px;
+    height: 195px;
+    background: url("Website_Images/Configurable_Black.png") no-repeat;
+    display: inline-block;
+    }
+    .card:hover .frstt{
+    background: url("Website_Images/Configurable_White.png") no-repeat;
+    } */
+/* .firstt {
+    width: 50px;
+    height: 50px;
+
+    background: url("/Website_Images/Configurable_Black.png")no-repeat ;
+
+}
+.card:hover firstt{
+    background: url("/Website_Images/Configurable_White.png") no-repeat;
+} */
+/* hr:hover{
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid #fff;
-}
+} */
 /* .hr:hover {
     border-top: #fff;
 } */
+/* .card:hover firstt{
+    
+    display: inline-block;
+} */
+.card .firstt {
+    display: none;
+    position: absolute;
+    top: 5;
+    left: 5;
+    z-index: 99;
+}
+.card:hover .firstt{
+    /* background: url("/Website_Images/Configurable_White.png") no-repeat; */
+    display: inline-block;
+}
+/* .card:hover .firstt {
+    display: inline-block;
+} */
+.card .secondd {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.card:hover .secondd {
+    display: inline;
+}
+.form-control {
+    border-radius: 40px;
+    font-size: 18px;
+}
+textarea {
+    margin-left: -15%;
+    border-radius: 23px;
+}
