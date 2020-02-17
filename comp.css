@@ -1,0 +1,39 @@
+h6.borderhed {
+    border-bottom: 1px groove!important;
+    border-bottom-color: #eff3f7;
+}
+.commthed {
+    border-bottom: 2px solid;
+    border-bottom-color: #eff3f7;
+}
+.parahed {
+    border-bottom: 2px solid;
+    border-bottom-color: #eff3f7;
+}
+h6 {
+    color: #333333;
+}
+.hedcolor{
+    color: darkblue;
+}
+
+/* .row.topheaddg {
+    border-top: 1px groove;
+    border-bottom-color: #eff3f7;
+} */
+.btn-primary {
+    background-color: #fe7815;
+    border-color: #fe7815;
+}
+.commntcolor{
+    color: darkblue;
+}
+.bordside {
+    border-right: 1px groove;
+    /* border-spacing: 3px; */
+}
+p {
+    font-size: 18px;
+    font-family: palatino;
+}
+

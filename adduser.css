@@ -1,0 +1,13 @@
+/* input#inputAddress {
+    font-size: 15px;
+    color: gray;
+} */
+.form-control {
+    font-size: 15px;
+    color: gray;
+
+}
+.custom-select{
+    font-size: 15px;
+    color: gray;
+}

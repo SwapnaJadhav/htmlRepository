@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<!-- <div class="backbg"> -->
+  <h6 class="top-heading py-3 ">Add User</h6>
+
+  <div class="container-fluid demo">
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <!-- <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> -->
+
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="more-less mr-2 fa fa-caret-up"></i>
+              <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+              Basic Info 
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body px-3">
+            <div class="row">
+              <div class="col-lg-12">
+              <div class="row">
+                <div class="col-md-10">
+            <form>
+
+              <div class="form-row">
+
+                <div class="col-md-3 mb-3 mr-3">
+                  <label for="validationServer01">Tenant ID</label>
+                  <input type="text" class="form-control" id="validationServer01" value="System Generated" required>
+                  <!-- <div class="valid-feedback">
+                    Looks good!
+                  </div> -->
+                </div>
+                <div class="col-md-3 mb-3 mr-3">
+                  <label for="validationServer02">Status</label>
+                  <input type="text" class="form-control" id="validationServer02" value="System Generated" required>
+                  <!-- <div class="valid-feedback">
+                    Looks good!
+                  </div> -->
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationServer11">Emplyee Id</label>
+                  <input type="text" class="form-control" id="validationServer11" value="Enter Employee ID" required>
+                  <!-- <div class="valid-feedback">
+                    Looks good!
+                  </div> -->
+                </div>
+                <!-- <img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre"> -->
+              
+              </div>
+              <!-- second -->
+              <div class="form-row">
+                <div class="col-md-3 mb-3 mr-3">
+                  <label for="validationServer01">First Name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" value="Enter First Name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3 mr-3">
+                  <label for="validationServer02">Middle Name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer02" value="Enter Middle Name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationServer00">Last Name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer00" value="Enter Last Name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+            
+              </div>
+              <!-- third -->
+              <div class="form-row">
+                <div class="col-md-3 mb-3">
+                  <label for="validationServer12">Contact Number</label>
+                  <input type="text" class="form-control" id="validationServer12" value="+91  Enter Number" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+            </div>
+<!-- fourth -->
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6 mr-3">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Enter Address">
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationServer04">Country</label>
+      <select class="custom-select is-invalid" id="validationServer04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid Country.
+      </div>
+    </div>
+    <div class="form-group col-md-6 mr-3">
+      <label for="validationServerEmail4">Email Address (This will be your User Id)</label>
+      <input type="email" class="form-control is-invalid" id="validationServerEmail4" placeholder="Enter Email Address">
+      <div class="invalid-feedback">
+        Please Provide valid Email.
+      </div>
+    </div>
+    <div class="form-group col-md-3 mb-3">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control is-valid" id="inputPassword4" placeholder="Enter Password">
+      <div class="valid-feedback">
+        Looks good!      </div>
+    </div>
+  </div>
+ 
+
+ 
+ 
+</form>
+<!-- fifth -->
+
+            </form>
+          </div>
+            <div class="col-md-2">
+              <!-- <div class="ml-2 col-sm-6"> -->
+                <img src="https://placehold.it/200x200" id="preview" class="img-thumbnail">
+
+                <div id="msg"></div>
+                <form method="post" id="image-form">
+                  <input type="file" name="img[]" class="file" accept="image/*">
+                  <div class="input-group py-2">
+                    <input type="text" class="form-control" disabled placeholder="Upload photo-No File Selected" id="file">
+                    
+                  </div>
+                  <div class="input-group-append">
+                    <button type="button" class="browse btn btn-primary ml-4" style="background-color: darkgray; border: darkgray;">Browse</button>
+                  </div>
+                </form>
+              <!-- </div> -->
+              <!-- <div class="ml-2 col-sm-6"> -->
+              <!-- </div> -->
+              <!-- <img src="./Website_Images/user1.PNG" class="rounded mx-auto d-block" alt="..."> 
+              <p class="pt-2">Upload Photo - No File Selected</p>             
+              <button type="button" class="btn btn-secondary ml-4" style="background-color: darkgray; border: darkgray;">Browse</button> -->
+
+              <!-- <button type="button" class="btn btn-secondary btn-sm">Browse</button> -->
+
+            </div>
+          </div>
+          </div>
+            </div>
+              <!-- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. -->
+          </div>
+            </div>
+        </div>
+      </div>
+  
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="more-less mr-2 fa fa-caret-right"></i>
+              <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+              Organisational Info 
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body px-3">
+            <!-- <div class="row">
+            <div class="col-lg-12"> -->
+            <div class="row">
+              <div class="col-md-10">
+            <form>
+              <div class="form-row">
+                <div class="col-md-3 mb-3 mr-3">
+                  <label for="validationServer01">Designation</label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" value="Enter Designation" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3 mr-3">
+                  <label for="validationServer02">Organisational Level</label>
+                  <input type="text" class="form-control is-valid" id="validationServer02" value="Enter Organisational Level" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationServer03">Department</label>
+                  <input type="text" class="form-control" id="validationServer03" value="Enter Department" required>
+                  <!-- <div class="valid-feedback">
+                    Looks good!
+                  </div> -->
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-3 mb-3 mr-3">
+                  <label for="validationServer03">Date Of Joining</label>
+                  <input type="text" class="form-control" id="validationServer03" value="DD/MM/YYYY" required>
+                  <!-- <div class="invalid-feedback">
+                    Please provide a valid Date.
+                  </div> -->
+                </div>
+                <div class="col-md-3 mb-3 mr-3">
+                  <label for="validationServer04">Reporting Manager</label>
+                  <select class="custom-select" id="validationServer04" required>
+                    <option selected disabled value="">Select Reporting Manager</option>
+                    <option>...</option>
+                  </select>
+                  <!-- <div class="invalid-feedback">
+                    Please select Reporting Manager.
+                  </div> -->
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationServer05">Assign Role</label>
+                  <select class="custom-select is-invalid" id="validationServer05" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <!-- <input type="text" class="form-control is-invalid" id="validationServer05" required> -->
+                  <div class="invalid-feedback">
+                    Please select multiple Role.
+                  </div>
+                </div>
+              </div>
+        
+              <!-- <button class="btn btn-primary" type="submit">Submit form</button> -->
+            </form>
+            </div>
+            <div class="col-md-2">
+              </div>
+            <!-- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. -->
+          </div>
+          <!-- </div>
+          </div> -->
+          </div>
+        </div>
+      </div>
+  
+    
+  
+    <!-- </div> -->
+    <!-- panel-group -->
+    <div class="BotBtons mt-5 pt-3 px-3">
+    <button type="button" class="btn btn-outline-secondary mr-2">Cancel</button>
+    <button type="button" class="btn btn-secondary mr-2">Activate</button>
+    <button type="button" class="btn btn-secondary">Save</button>
+</div>
+
+
+    
+  </div>
+  <!-- container -->
+  <!-- </div> -->
+  
+</body>
+</html>
+<link rel="stylesheet" type="text/css" href="./all.css">
+<link rel="stylesheet" type="text/css" href="./adduser.css">
+
+<script type="text/javascript" src="allp.js"></script>

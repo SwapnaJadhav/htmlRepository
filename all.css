@@ -1,0 +1,100 @@
+/*******************************
+* ACCORDION WITH TOGGLE ICONS
+* Does not work properly if "in" is added after "collapse".
+*******************************/
+.top-heading{
+    margin-left: 15%;
+}
+.panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #013164;
+    border-color: #EEEEEE;
+}
+
+.panel-title {
+    font-size: 14px;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+}
+
+/* .more-less {
+    float: right;
+    color: #212121;
+} */
+.more-less {
+    float: left;
+    color: #fff;
+    padding: 3px;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+}
+
+/* ----- v CAN BE DELETED v ----- */
+body {
+background-color: #eff3f7;
+font-family: palatino;
+font-size: 15px;
+font-weight: bold;
+}
+
+
+.demo {
+padding-top: 20px;
+padding-bottom: 90px;
+background-color: #fff;
+
+}
+/* .container {
+    padding-bottom: 50px;
+} */
+/* Buttons */
+.BotBtons{
+    border-top: 1px groove;
+    /* padding-top: 10px; */
+
+}
+.btn-secondary{
+    background-color: #fe7815;
+    border-color: orangered;
+}
+a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+a:hover{
+    color: #fff;
+    font-size: 16px;
+}
+/* input#validationServer {
+    font-size: 15px;
+    color: gray;
+} */
+.top-heading{
+color: #013164;
+font-weight: bold;
+font-size: 15px;
+}
+/* img.rounded.mx-auto.d-block {
+    height: 150px;
+} */
+
+/* upload photo */
+.file {
+    visibility: hidden;
+    position: absolute;
+  }
