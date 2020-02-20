@@ -1,0 +1,69 @@
+.top-heading {
+    color: #224b76;
+    font-size: 16px;
+    font-family: palatino;
+    font-weight: bold;
+}
+.whitebackground {
+    padding-top: 15px;
+    padding-bottom: 530px;
+    /* background-color: #ffffff; */
+}
+.table td{
+    padding: 5px;
+    font-size: 14px;
+    color: #494A4C;
+    font-family: Avnier Book;
+}
+.table th{
+    padding: 3px;
+    font-size: 16px;
+    color: #224b76;
+    font-family: Avnier Book;
+    font-weight: bold;
+    border-top-color: white;
+    border-bottom-color: #fff;
+    /* border-collapse: none; */
+
+}
+.page-link {
+    color: #333333;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.page-link:hover {
+    /* background-color: #fe7815; */
+    color: #333333;
+
+}
+.page-link.current{
+    background-color: #fe7815;
+    color: #fff;
+}
+
+/* .table {
+    border-collapse: inherit;
+} */
+.btn-secondary{
+    background-color: #fe7815;
+    border-color:#fe7815;
+    width: 71px;
+    height: 40px;
+    padding: 3px;
+    float: right;
+
+}
+
+/* .table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(0,0,0,.05);
+} */
+/*
+.btn-primary{
+    background-color: #ef7915;
+    border-color: #ef7915;
+    font-size: 16px;
+    font-family: Avnier-Book;
+    height: 40px;
+    width: 71px;
+    float: right;
+} */
