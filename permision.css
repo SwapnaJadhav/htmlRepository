@@ -10,8 +10,8 @@ body, html {
   
   /* Style tab links */
   .tablink {
-    background-color: #555;
-    color: white;
+    background-color:#012164;
+    color: #fff;
     float: left;
     border: none;
     outline: none;
@@ -22,8 +22,13 @@ body, html {
   }
   
   .tablink:hover {
-    background-color: #777;
+    background-color:#fff;
+    color: #333333;
   }
+  /* .tablink.current{
+    background-color: #fff;
+
+  } */
   
   /* Style the tab content (and add height:100% for full page content) */
   .tabcontent {
@@ -33,14 +38,14 @@ body, html {
     height: 100%;
   }
   
-  #Home {background-color: red;}
-  #News {background-color: green;}
-  #Contact {background-color: blue;}
-  #About {background-color: orange;}
+  #Role {background-color: #fff;}
+  #Permissions {background-color:#fff;}
+  /* #Contact {background-color: blue;}
+  #About {background-color: orange;} */
 
   .row{
       background-color: white;
-      padding-bottom: 500px;
+      padding-bottom: 300px;
       padding-top: 20px;
       
   }
