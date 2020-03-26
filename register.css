@@ -1,0 +1,237 @@
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #eff3f7;
+  }
+  .Section-wrapper{
+  background-color: #fff;
+  }
+  .ditem .wrapper-progressBar {
+      width: 100%
+  }
+  .ditem .progressbar .step0:before {
+    content: "1";
+    color: #fff;
+  }
+  
+  
+  .ditem .progressBar li {
+      list-style-type: none;
+      float: left;
+      width: 33%;
+      position: relative;
+      text-align: center;
+  }
+  
+  .ditem .progressBar li:before {
+    content: "2";
+    line-height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px;
+    background-color: #013164;
+    color: #fff;
+  }
+  .ditem .progressBar .step3:before {
+      content: "3";
+      line-height: 30px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ddd;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px;
+      background-color: #eff3f7;
+      color: #333333;
+  
+  }
+  
+  .ditem .progressBar li:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #013164;
+      top: 15px;
+      left: -53%;
+      z-index: 1;
+  }
+  
+  .ditem .progressBar li:first-child:after {
+      content: none;
+  }
+  .ditem .progressBar li.active {
+    color: #333333;
+    font-size: 14;
+  }
+  
+  
+  .ditem .progressBar li.active:before {
+    border-color: #9E9E9E;
+    background-color:#FE7815;
+  }
+  
+  
+  
+  .ditem .progressBar li.active + li:after {
+    background-color: #B2AeAe;
+  }
+  
+  .title{
+    font-size: 26px;
+    color: #333333;
+    font-family: Avenir Heavy;
+    font-weight: bold;
+  }
+  
+  .ditem .abc {
+      color: 'red';
+    }
+  
+    
+  
+  
+  
+  .ditem .btn-file {
+      position: relative;
+      overflow: hidden;
+  }
+  
+  /* <-- Company logo--> */
+  .ditem #customFile .custom-file-control:lang(en)::after {
+      content: "Select file...";
+    }
+    
+    .ditem #customFile .custom-file-control:lang(en)::before {
+      content: "Click me";
+    }
+    
+    /*when a value is selected, this class removes the content */
+    .ditem custom-file-control.selected:lang(en)::after {
+      content: "" !important;
+    }
+    
+    .ditem .custom-file {
+      overflow: hidden;
+    }
+    .ditem .custom-file-control {
+      white-space: nowrap;
+    }
+   
+    .ditem .center {
+      display :table;
+      text-align: center;
+      margin:auto;
+      
+    }
+    .ditem .bodyline{
+      padding: 70px 90px;
+    }
+    .ditem .menu-text a{
+      color:#212529;
+    }
+    .ditem .container-fluid{
+      padding-right: 66px;
+      padding-left: 66px;
+    }
+    .form-sungroup {
+      padding-left: 70px;
+  }
+  .ditem .btn-primary {
+    color: #fff;
+    background-color: #fe7815;
+    border-color: #fe7815;
+  }
+  
+  .body-color label {
+    color: #212529;
+  }
+  .form-control{
+    font-size: 12px;
+  }
+  .custom-file {
+    font-size: 12px;
+  
+  }
+  .ditem .form-control {
+    border: 1px solid #dc3545;
+   
+  }
+  .ditem .h6 {
+    font-size: 12px;
+  }
+  .ditem form.needs-validation {
+    font-size: 15px;
+  }
+  .ditem input#inputEmail4 {
+  
+    border: 1px solid #212529;
+  }
+  .ditem .required {
+    color: red;
+  }
+  .ditem .img-thumbnail {
+    padding: 0px;
+    /* border: 0px; */
+  }
+  .ditem .img-thumbnail {
+    width: 310px;
+    height: 45px;
+  }
+  .ditem .nav-link {
+    font-size: 22px;
+    color: #333333;
+  }
+  .ditem .h2 {
+    font-size: 26px;
+    color: #333333;
+    
+  }
+  .ditem .active{
+    color: #FE7815;
+  }
+  .ditem .progressbar li {
+    font-size: 14;
+  }
+  .ditem navbar navbar-light bg-light{
+    background-color: #eff3f7;
+  }
+  .ditem button.btn.btn-primary {
+    font-size: 13;
+    padding: 12px;
+  }
+  a.stretched-link {
+    font-size: 13px;
+    color:#1458A8
+  }
+  
+  .ditem .centre {
+    text-align: center;
+  }
+  .ditem .btn-primary {
+    color: #fff;
+    background-color: var(--orange);
+  
+  }
+  
+  
+  /* .img-thumbnail {
+    max-width: 145px;
+    padding: 1px;
+    margin: inherit;
+    border: none;
+  } */
+  /* .ditem .nav {
+    padding-left: 90px;
+  } */
