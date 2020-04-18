@@ -16,6 +16,16 @@
 /* button.close {
     display:block;
 } */
+.btn-primary {
+    color: #fff;
+    background-color: #fe7815;
+    border-color: #fe7815;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #fe7815;
+    border-color: #fe7815;
+}
 .body{
     font-size: 22px;
     font-family: palatino;
