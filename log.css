@@ -6,7 +6,18 @@
 .modal-footer {
     display: block;
 }
-
+.btn-outline-secondary {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+    border-radius: 10px;
+}
+.btn-outline-secondary:hover {
+    color: #fff;
+    border-color: #000;
+    background-color: #000 !important;
+    border-radius: 10px;
+}
 .textcol {
     color:darkblue;
 }
@@ -20,10 +31,11 @@
     color: #fff;
     background-color: #fe7815;
     border-color: #fe7815;
+    border-radius: 10px;
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #fe7815;
+    background-color: #fe7815 !important;
     border-color: #fe7815;
 }
 .body{

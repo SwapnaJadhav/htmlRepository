@@ -12,6 +12,17 @@ h6.borderhed {
     overflow-y: scroll;
     margin-top: -10px;
 }
+.btn-outline-secondary {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+    border-radius: 10px;
+}
+.btn-outline-secondary:hover{
+    color: #fff;
+    border-color: #000;
+    background-color: #000 !important;
+}
 h6 {
     color: #333333;
 }
@@ -26,9 +37,10 @@ h6 {
 .btn-primary {
     background-color: #fe7815;
     border-color: #fe7815;
+    border-radius: 10px;
 }
 .btn-primary:hover {
-    background-color: #fe7815;
+    background-color: #fe7815 !important;
     border-color: #fe7815;
 }
 .commntcolor{
